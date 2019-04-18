@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Path C:\Users\Public\Desktop -Include * -File -Recurse | foreach { $_.Delete()} 
