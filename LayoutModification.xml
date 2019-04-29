@@ -9,12 +9,17 @@
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="6">
         <start:Group Name="Application">
+	<!-- C'est le nom qui se trouvera au-dessus de chaque catégorie -->
           <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{6D809377-6AF0-444B-8957-A3773F02200E}\7-Zip\7zFM.exe" />
           <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="ibm.lotus.client.notes" />
           <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" />
           <start:DesktopApplicationTile Size="2x2" Column="0" Row="4" DesktopApplicationID="{6D809377-6AF0-444B-8957-A3773F02200E}\PDFsam Basic\pdfsam.exe" />
           <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Belgium Identity Card\EidViewer\eID Viewer.exe" />
           <start:DesktopApplicationTile Size="2x2" Column="2" Row="4" DesktopApplicationID="VMware.Horizon.Client" />
+	  <!-- Pour la propriété size, vous avez la possibilité de 1x1(petite vignette),2x2(vignette moyenne), 4x2(vignette large) et 4x4(grande vignette) pour les applications pré-installées
+			   Pour les autres applications, vous avez seulement la possibilité de 2x2 et 1x1.-->
+		  <!-- Pour les applications pré-installées, utilisiez la propriété : AppUserModelID
+			   Pour les autres application, utilisez la propriété : DesktopApplicationID + le GUID de l'aplication ou le nom de l'application -->
         </start:Group>
         <start:Group Name="Office">
           <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="Microsoft.Office.EXCEL.EXE.15" />
